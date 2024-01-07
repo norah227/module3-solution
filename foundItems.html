@@ -1,0 +1,17 @@
+
+  
+<div class="row">
+        <div ng-repeat="title in founds.titles">{{ title }}</div>
+        <div class="col-md-12">  
+      <div class="col-md-6"ng-repeat="item in founds.found">
+        <h2>{{ item.name }}</h2>
+        <h3>{{ item.description }}</h3>
+        <p>{{ item.short_name }}</p>
+        <div>  <p>ACTION</p>
+          <button ng-click="founds.remove({ index: $index })">Remove</button>
+        </div>
+</div>
+    </div>
+</div>
+  </div>
+   
